@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Estilo: Magazine / revista — Presente Mental</title>
+<style>
+  :root{--lav:#9a86c4;--lav-deep:#5f4a92;--cream:#f4ecdd;--ink:#2a2433;--muted:#746a80;--paper:#fcf9f3}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--paper);line-height:1.6}
+  .sans{font-family:'Segoe UI',system-ui,sans-serif}
+  .style-tag{position:fixed;bottom:14px;right:14px;z-index:99;background:var(--ink);color:#fff;font-family:'Segoe UI',sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 30px}
+  header{display:flex;justify-content:space-between;align-items:baseline;padding:30px 0 18px;border-bottom:2px solid var(--ink)}
+  .mast{font-size:1.8rem;font-weight:700;letter-spacing:-.01em}
+  .mast span{font-style:italic;color:var(--lav-deep)}
+  .meta{font-family:'Segoe UI',sans-serif;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  nav{display:flex;gap:22px;padding:12px 0;border-bottom:1px solid var(--lav);font-family:'Segoe UI',sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}
+  nav a{color:var(--muted);text-decoration:none}
+  .feature{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;padding:48px 0;align-items:center;border-bottom:1px solid #e7ddcd}
+  .kicker{font-family:'Segoe UI',sans-serif;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;color:var(--lav-deep);margin-bottom:16px}
+  h1{font-size:3.5rem;line-height:1.04;font-weight:400;letter-spacing:-.01em}
+  h1 em{color:var(--lav-deep)}
+  .dek{font-size:1.2rem;color:var(--muted);margin:20px 0 26px;max-width:42ch}
+  .btn{font-family:'Segoe UI',sans-serif;display:inline-block;text-decoration:none;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;padding:14px 28px;background:var(--ink);color:#fff}
+  .feat-img{min-height:460px;background-image:url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80'),url('https://picsum.photos/seed/pmmag/800/1000'),linear-gradient(160deg,var(--lav),var(--cream));background-size:cover;background-position:center top}
+  .cols{columns:3;column-gap:34px;padding:40px 0;border-bottom:1px solid #e7ddcd}
+  .cols h2{font-size:1.9rem;font-weight:400;margin-bottom:10px;column-span:all}
+  .svc{break-inside:avoid;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid #eadfce}
+  .svc h3{font-size:1.35rem;font-weight:400}.svc p{color:var(--muted)}
+  .price{font-family:'Segoe UI',sans-serif;color:var(--lav-deep);font-weight:700;margin-top:8px}
+  .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:center;padding:44px 0}
+  .amb{min-height:300px;background-image:url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80'),url('https://picsum.photos/seed/pmmagroom/1000/700'),linear-gradient(160deg,var(--cream),var(--lav));background-size:cover;background-position:center}
+  blockquote{font-size:1.6rem;font-style:italic;color:var(--lav-deep)}
+  footer{font-family:'Segoe UI',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:30px 0;border-top:2px solid var(--ink)}
+  html,body{overflow-x:hidden}
+  @media(max-width:860px){.feature,.about{grid-template-columns:1fr}.cols{columns:2}h1{font-size:2.2rem}}
+  @media(max-width:560px){.wrap{padding:0 20px}header{flex-direction:column;align-items:flex-start;gap:6px}nav{flex-wrap:wrap;gap:14px}.feature{padding:36px 0}h1{font-size:1.95rem}.feat-img{min-height:320px}.cols{columns:1}.amb{min-height:230px}blockquote{font-size:1.35rem}.style-tag{font-size:10px;padding:5px 10px}}
+</style>
+</head>
+<body>
+  <div class="style-tag">Estilo 09 · Magazine / revista</div>
+  <div class="wrap">
+    <header><div class="mast">Presente <span>Mental</span></div><div class="meta">Psicología · Edición 2026</div></header>
+    <nav><a href="#">Sobre mí</a><a href="#">Servicios</a><a href="#">Enfoque</a><a href="#">Agendar</a></nav>
+
+    <div class="feature">
+      <div>
+        <div class="kicker">En portada · Diana Islas</div>
+        <h1>El bienestar también se <em>practica</em>.</h1>
+        <p class="dek">Un acompañamiento psicológico cercano y profesional, pensado para tu ritmo y tu historia.</p>
+        <a class="btn" href="#">Agendar una cita</a>
+      </div>
+      <div class="feat-img"></div>
+    </div>
+
+    <div class="cols">
+      <h2>Servicios</h2>
+      <div class="svc"><h3>Terapia individual</h3><p>Sesión de 50 minutos, presencial o en línea.</p><div class="price">$600</div></div>
+      <div class="svc"><h3>Terapia en línea</h3><p>El mismo cuidado, desde donde estés.</p><div class="price">$600</div></div>
+      <div class="svc"><h3>Primera consulta</h3><p>Un primer encuentro para conocernos.</p><div class="price">$600</div></div>
+    </div>
+
+    <div class="about">
+      <div class="amb"></div>
+      <div>
+        <div class="kicker">Sobre mí</div>
+        <blockquote>“Cada persona avanza a su propio ritmo; mi labor es acompañar ese camino.”</blockquote>
+        <p class="dek" style="margin-top:16px">Diana Rebeca Islas Lozada · Psicóloga clínica.</p>
+      </div>
+    </div>
+
+    <footer>Presente Mental · Diana Islas © 2026</footer>
+  </div>
+</body>
+</html>

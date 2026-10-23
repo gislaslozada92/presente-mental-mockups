@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Presente Mental · Elige tu estilo de landing</title>
+<meta name="theme-color" content="#7d68ad" />
+<style>
+  :root{--lav:#9a86c4;--lav-deep:#5f4a92;--cream:#f4ecdd;--ink:#2f2838;--muted:#7a7085;--bg:#faf5ea;--line:#ece3d6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;overflow-x:hidden}
+  .hero{background:radial-gradient(900px 500px at 110% -20%,#e9dcf5,transparent 60%),radial-gradient(800px 500px at -10% 120%,#f6e2c9,transparent 55%),#fff;border-bottom:1px solid var(--line)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  .hero-in{padding:56px 22px 48px;max-width:720px}
+  .brand{display:inline-flex;align-items:center;gap:10px;font-weight:800;margin-bottom:22px}
+  .dot{width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--lav),var(--lav-deep))}
+  .pill{display:inline-block;background:#f1ecf8;color:var(--lav-deep);font-weight:700;font-size:.82rem;padding:7px 14px;border-radius:999px}
+  h1{font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.1;margin:16px 0 12px;letter-spacing:-.02em}
+  h1 span{color:var(--lav-deep)}
+  .lead{color:var(--muted);font-size:1.12rem;max-width:56ch}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px;padding:44px 0 70px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;box-shadow:0 8px 22px rgba(95,74,146,.06);transition:transform .12s ease,box-shadow .12s ease}
+  .card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(95,74,146,.16)}
+  .thumb{height:130px;position:relative;display:flex;align-items:flex-end;padding:14px}
+  .thumb .n{position:absolute;top:12px;right:14px;font-weight:800;color:rgba(255,255,255,.9);font-size:1.4rem}
+  .thumb .emoji{font-size:1.8rem;filter:drop-shadow(0 2px 6px rgba(0,0,0,.2))}
+  .body{padding:16px 18px 20px}
+  .body h3{font-size:1.12rem;margin-bottom:4px}
+  .body p{color:var(--muted);font-size:.92rem}
+  .go{margin-top:14px;display:inline-flex;align-items:center;gap:6px;color:var(--lav-deep);font-weight:700;font-size:.92rem}
+  /* fondos distintivos por estilo */
+  .t1{background:linear-gradient(135deg,#efe7f7,#f7efe2)}
+  .t2{background:linear-gradient(135deg,#c9b6ef,#f3d9b8)}
+  .t3{background:linear-gradient(150deg,#5f4a92,#9a86c4)}
+  .t4{background:#f0e7d6;border-bottom:4px solid #211c2b}
+  .t5{background:radial-gradient(120px 80px at 80% 10%,#e9dcf5,transparent),radial-gradient(120px 80px at 10% 90%,#f6e2c9,transparent),#faf4ea}
+  .t6{background:linear-gradient(100deg,#f4ecdd 50%,#9a86c4 50%)}
+  .t7{background:linear-gradient(135deg,#241d31,#5f4a92)}
+  .t8{background:linear-gradient(135deg,#6f5aa0,#9a86c4 45%,#d7b9c9)}
+  .t9{background:#fcf9f3;border-bottom:3px solid #2a2433}
+  .t10{background:#e8e2f1;box-shadow:inset 6px 6px 12px #c7c0d8,inset -6px -6px 12px #fff}
+  footer{text-align:center;color:var(--muted);padding:30px 22px;border-top:1px solid var(--line);background:#fff}
+  @media(max-width:560px){.hero-in{padding:44px 20px 36px}.grid{padding:30px 0 50px;gap:16px}}
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-in">
+      <div class="brand"><span class="dot"></span>Presente Mental</div>
+      <span class="pill">Para Diana 💜</span>
+      <h1>Elige el <span>estilo</span> que más te guste</h1>
+      <p class="lead">
+        Hola Diana, estos son 10 estilos de página para tu consulta. Ábrelos, compáralos
+        (se ven bien en celular) y dime cuál te late más. Con ese armamos tu sitio real.
+      </p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="grid">
+      <a class="card" href="01-editorial-minimalista.html"><div class="thumb t1"><span class="n" style="color:#5f4a92">01</span><span class="emoji">📖</span></div><div class="body"><h3>Editorial minimalista</h3><p>Elegante, tipografía serif, mucho aire. Esquinas rectas.</p><span class="go">Ver estilo →</span></div></a>
+      <a class="card" href="02-glassmorphism.html"><div class="thumb t2"><span class="n">02</span><span class="emoji">🧊</span></div><div class="body"><h3>Glassmorphism</h3><p>Tarjetas de vidrio esmerilado sobre degradados suaves.</p><span class="go">Ver estilo →</span></div></a>
+      <a class="card" href="03-bento-grid.html"><div class="thumb t3"><span class="n">03</span><span class="emoji">🍱</span></div><div class="body"><h3>Bento grid</h3><p>Mosaico moderno de bloques. Dinámico y actual.</p><span class="go">Ver estilo →</span></div></a>
+      <a class="card" href="04-swiss-sin-bordes-redondeados.html"><div class="thumb t4"><span class="n" style="color:#211c2b">04</span><span class="emoji">⬛</span></div><div class="body"><h3>Swiss (esquinas rectas)</h3><p>Rejilla fuerte, bordes marcados, alto contraste.</p><span class="go">Ver estilo →</span></div></a>
+      <a class="card" href="05-organico-boho.html"><div class="thumb t5"><span class="n" style="color:#6a5699">05</span><span class="emoji">🌸</span></div><div class="body"><h3>Orgánico boho</h3><p>Formas suaves, cálido y acogedor. Muy redondeado.</p><span class="go">Ver estilo →</span></div></a>
+      <a class="card" href="06-split-screen.html"><div class="thumb t6"><span class="n" style="color:#5f4a92">06</span><span class="emoji">🪟</span></div><div class="body"><h3>Split-screen</h3><p>Pantalla dividida: texto a un lado, foto al otro.</p><span class="go">Ver estilo →</span></div></a>
+      <a class="card" href="07-modo-noche-elegante.html"><div class="thumb t7"><span class="n">07</span><span class="emoji">🌙</span></div><div class="body"><h3>Modo noche elegante</h3><p>Fondo oscuro ciruela con acentos lavanda. Lujo.</p><span class="go">Ver estilo →</span></div></a>
+      <a class="card" href="08-aurora-gradient.html"><div class="thumb t8"><span class="n">08</span><span class="emoji">🌈</span></div><div class="body"><h3>Aurora gradient</h3><p>Degradados vibrantes, estilo app moderna.</p><span class="go">Ver estilo →</span></div></a>
+      <a class="card" href="09-magazine.html"><div class="thumb t9"><span class="n" style="color:#2a2433">09</span><span class="emoji">📰</span></div><div class="body"><h3>Magazine / revista</h3><p>Editorial a columnas, con aire de publicación.</p><span class="go">Ver estilo →</span></div></a>
+      <a class="card" href="10-neumorfismo-soft-ui.html"><div class="thumb t10"><span class="n" style="color:#6b5a9a">10</span><span class="emoji">🫧</span></div><div class="body"><h3>Neumorfismo (Soft UI)</h3><p>Relieves suaves, monocromático lavanda. Delicado.</p><span class="go">Ver estilo →</span></div></a>
+    </div>
+  </div>
+
+  <footer>Presente Mental · Maquetados de estilo © 2026 💜</footer>
+</body>
+</html>

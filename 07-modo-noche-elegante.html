@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Estilo: Modo noche elegante — Presente Mental</title>
+<style>
+  :root{--lav:#b7a4e0;--lav-deep:#9a86c4;--plum:#241d31;--plum-2:#2e2640;--cream:#f4ecdd;--ink:#efe9f5;--muted:#a79fb8}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',system-ui,sans-serif;color:var(--ink);background:var(--plum);line-height:1.6}
+  .style-tag{position:fixed;bottom:14px;right:14px;z-index:99;background:var(--lav);color:var(--plum);font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:999px;font-weight:700}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 26px}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:26px 0}
+  .brand{font-weight:800;display:flex;align-items:center;gap:10px}
+  .dot{width:13px;height:13px;border-radius:50%;background:var(--lav)}
+  nav a{color:var(--muted);text-decoration:none;font-weight:600;margin-left:22px}
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;padding:40px 0 60px}
+  .pill{display:inline-block;background:rgba(183,164,224,.16);color:var(--lav);font-weight:700;font-size:.82rem;padding:8px 15px;border-radius:999px}
+  h1{font-size:3.4rem;line-height:1.07;margin:20px 0 14px;letter-spacing:-.02em}
+  h1 span{color:var(--lav)}
+  .lead{color:var(--muted);font-size:1.16rem;max-width:44ch}
+  .cta{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{text-decoration:none;font-weight:700;padding:15px 28px;border-radius:12px}
+  .btn-main{background:var(--lav);color:var(--plum)}
+  .btn-ghost{border:1px solid rgba(183,164,224,.4);color:var(--lav)}
+  .photo{min-height:460px;border-radius:22px;background-image:url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80'),url('https://picsum.photos/seed/pmnight/800/1000'),linear-gradient(160deg,var(--lav-deep),var(--plum-2));background-size:cover;background-position:center top;box-shadow:0 30px 70px rgba(0,0,0,.4)}
+  .svcs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:20px 0 60px}
+  .card{background:var(--plum-2);border:1px solid rgba(183,164,224,.14);border-radius:18px;padding:28px}
+  .card .ic{font-size:1.6rem}.card h3{margin:12px 0 6px}.card p{color:var(--muted)}
+  .price{margin-top:14px;font-weight:800;color:var(--lav);font-size:1.3rem}
+  .band{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center;background:var(--plum-2);border-radius:26px;padding:34px;margin-bottom:50px;border:1px solid rgba(183,164,224,.14)}
+  .amb{min-height:300px;border-radius:18px;background-image:url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80'),url('https://picsum.photos/seed/pmroom/1000/700'),linear-gradient(160deg,var(--cream),var(--lav-deep));background-size:cover;background-position:center}
+  footer{text-align:center;color:var(--muted);padding:34px;font-weight:600}
+  html,body{overflow-x:hidden}
+  @media(max-width:860px){.hero,.band{grid-template-columns:1fr}.svcs{grid-template-columns:1fr}h1{font-size:2.2rem}}
+  @media(max-width:560px){.wrap{padding:0 18px}nav{flex-direction:column;gap:10px;align-items:flex-start}nav>div{display:flex;flex-wrap:wrap;gap:6px}nav a{margin-left:0}h1{font-size:1.95rem}.photo{min-height:320px}.band{padding:24px}.amb{min-height:230px}.style-tag{font-size:10px;padding:5px 10px}}
+</style>
+</head>
+<body>
+  <div class="style-tag">Estilo 07 · Modo noche elegante</div>
+  <div class="wrap">
+    <nav><div class="brand"><span class="dot"></span>Presente Mental</div><div><a href="#">Sobre mí</a><a href="#">Servicios</a><a href="#">Agendar</a></div></nav>
+    <div class="hero">
+      <div>
+        <span class="pill">✦ Psicología · Diana Islas</span>
+        <h1>Un espacio <span>sereno</span> para tu mente.</h1>
+        <p class="lead">Terapia cálida y profesional. Agenda tu sesión con calma, cuando lo necesites.</p>
+        <div class="cta"><a class="btn btn-main" href="#">Agendar una cita</a><a class="btn btn-ghost" href="#">Ver servicios</a></div>
+      </div>
+      <div class="photo"></div>
+    </div>
+    <div class="svcs">
+      <div class="card"><div class="ic">🌙</div><h3>Terapia individual</h3><p>Sesión de 50 minutos.</p><div class="price">$600</div></div>
+      <div class="card"><div class="ic">💻</div><h3>Terapia en línea</h3><p>Desde donde estés.</p><div class="price">$600</div></div>
+      <div class="card"><div class="ic">🤝</div><h3>Primera consulta</h3><p>Sin compromiso.</p><div class="price">$600</div></div>
+    </div>
+    <div class="band">
+      <div class="amb"></div>
+      <div>
+        <span class="pill">Sobre mí</span>
+        <h1 style="font-size:1.9rem;margin:14px 0 10px">Diana R. Islas Lozada</h1>
+        <p class="lead">Psicóloga clínica. Un acompañamiento confidencial, humano y respetuoso.</p>
+      </div>
+    </div>
+  </div>
+  <footer>Presente Mental · Diana Islas © 2026</footer>
+</body>
+</html>

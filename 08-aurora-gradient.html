@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Estilo: Aurora gradient — Presente Mental</title>
+<style>
+  :root{--lav:#9a86c4;--lav-deep:#5f4a92;--cream:#f4ecdd;--ink:#2f2838;--muted:#6f6680}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',system-ui,sans-serif;color:var(--ink);background:#fbf8f2;line-height:1.6}
+  .style-tag{position:fixed;bottom:14px;right:14px;z-index:99;background:#fff;color:var(--lav-deep);font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:999px;font-weight:700;box-shadow:0 6px 18px rgba(95,74,146,.15)}
+  .hero{position:relative;overflow:hidden;color:#fff;
+    background:linear-gradient(135deg,#6f5aa0,#9a86c4 45%,#d7b9c9 100%)}
+  .hero::before{content:"";position:absolute;inset:-40% -10% auto;height:120%;
+    background:radial-gradient(closest-side,rgba(255,255,255,.35),transparent),radial-gradient(closest-side,rgba(247,214,184,.5),transparent 70%);filter:blur(10px);opacity:.8}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 26px;position:relative;z-index:2}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0}
+  .brand{font-weight:800;display:flex;align-items:center;gap:10px}
+  .dot{width:13px;height:13px;border-radius:50%;background:#fff}
+  nav a{color:rgba(255,255,255,.85);text-decoration:none;font-weight:600;margin-left:20px}
+  .hero-inner{text-align:center;padding:60px 0 120px;max-width:760px;margin:0 auto}
+  .pill{display:inline-block;background:rgba(255,255,255,.2);padding:8px 16px;border-radius:999px;font-weight:700;font-size:.85rem}
+  h1{font-size:3.6rem;line-height:1.06;margin:20px 0 14px;letter-spacing:-.02em}
+  .lead{font-size:1.2rem;opacity:.92;max-width:52ch;margin:0 auto}
+  .cta{margin-top:30px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{text-decoration:none;font-weight:700;padding:15px 30px;border-radius:999px}
+  .btn-main{background:#fff;color:var(--lav-deep)}
+  .btn-ghost{background:rgba(255,255,255,.18);color:#fff}
+  .float{max-width:1000px;margin:-80px auto 0;position:relative;z-index:3;padding:0 26px}
+  .svcs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:#fff;border-radius:22px;padding:28px;box-shadow:0 20px 50px rgba(95,74,146,.14)}
+  .ic{width:50px;height:50px;border-radius:14px;background:#f1ecf8;display:grid;place-items:center;font-size:1.4rem}
+  .card h3{margin:14px 0 6px}.card p{color:var(--muted)}.price{margin-top:14px;font-weight:800;color:var(--lav-deep);font-size:1.3rem}
+  .band{max-width:1000px;margin:40px auto;padding:0 26px}
+  .band-in{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center;background:#fff;border-radius:26px;padding:30px;box-shadow:0 20px 50px rgba(95,74,146,.1)}
+  .amb{min-height:300px;border-radius:18px;background-image:url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80'),url('https://picsum.photos/seed/pmaurora/1000/700'),linear-gradient(160deg,var(--cream),var(--lav));background-size:cover;background-position:center}
+  .pill-dark{display:inline-block;background:#f1ecf8;color:var(--lav-deep);padding:7px 14px;border-radius:999px;font-weight:700;font-size:.82rem}
+  footer{text-align:center;color:var(--muted);padding:40px;font-weight:600}
+  html,body{overflow-x:hidden}
+  @media(max-width:860px){.svcs,.band-in{grid-template-columns:1fr}h1{font-size:2.3rem}.hero-inner{padding:50px 0 110px}}
+  @media(max-width:560px){.wrap{padding:0 18px}nav{flex-direction:column;gap:10px;align-items:flex-start}nav>div{display:flex;flex-wrap:wrap;gap:6px}nav a{margin-left:0}h1{font-size:1.95rem}.hero-inner{padding:40px 0 110px}.float,.band{padding:0 18px}.band-in{padding:24px}.amb{min-height:230px}.style-tag{font-size:10px;padding:5px 10px}}
+</style>
+</head>
+<body>
+  <div class="style-tag">Estilo 08 · Aurora gradient</div>
+  <div class="hero">
+    <div class="wrap">
+      <nav><div class="brand"><span class="dot"></span>Presente Mental</div><div><a href="#">Sobre mí</a><a href="#">Servicios</a><a href="#">Agendar</a></div></nav>
+      <div class="hero-inner">
+        <span class="pill">Psicología · Citas en línea</span>
+        <h1>Estar bien nunca fue tan simple.</h1>
+        <p class="lead">Agenda tu sesión con Diana Islas en minutos. Presencial o en línea, con pago seguro.</p>
+        <div class="cta"><a class="btn btn-main" href="#">Agendar una cita</a><a class="btn btn-ghost" href="#">Ver servicios</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="float">
+    <div class="svcs">
+      <div class="card"><div class="ic">🌿</div><h3>Terapia individual</h3><p>Sesión de 50 minutos.</p><div class="price">$600</div></div>
+      <div class="card"><div class="ic">💻</div><h3>Terapia en línea</h3><p>Desde donde estés.</p><div class="price">$600</div></div>
+      <div class="card"><div class="ic">🤝</div><h3>Primera consulta</h3><p>Sin compromiso.</p><div class="price">$600</div></div>
+    </div>
+  </div>
+
+  <div class="band">
+    <div class="band-in">
+      <div class="amb"></div>
+      <div>
+        <span class="pill-dark">Sobre mí</span>
+        <h1 style="color:var(--ink);font-size:1.9rem;margin:14px 0 10px">Diana R. Islas Lozada</h1>
+        <p class="lead" style="color:var(--muted)">Psicóloga clínica. Acompañamiento cálido, seguro y a tu ritmo.</p>
+      </div>
+    </div>
+  </div>
+  <footer>Presente Mental · Diana Islas © 2026</footer>
+</body>
+</html>

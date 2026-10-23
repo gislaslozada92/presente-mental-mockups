@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Estilo: Orgánico boho cálido — Presente Mental</title>
+<style>
+  :root{--lav:#a391cb;--lav-deep:#6a5699;--cream:#f4ead6;--peach:#f0d7bd;--ink:#3a3147;--muted:#7c7389;--sage:#b9c3a6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',system-ui,sans-serif;color:var(--ink);line-height:1.6;
+    background:radial-gradient(1000px 500px at 110% 0,#e9dcf5 0,transparent 55%),
+               radial-gradient(900px 500px at -10% 100%,#f6e2c9 0,transparent 55%),#faf4ea}
+  .style-tag{position:fixed;bottom:14px;right:14px;background:var(--ink);color:#fff;font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:7px 15px;border-radius:999px;z-index:99}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 26px}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:26px 0}
+  .brand{font-weight:800;font-size:1.2rem;display:flex;align-items:center;gap:10px}
+  .leaf{width:26px;height:26px;background:var(--lav);border-radius:60% 40% 55% 45%/55% 45% 60% 40%}
+  nav a{color:var(--muted);text-decoration:none;font-weight:600;margin-left:20px}
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:34px 0 20px}
+  .pill{display:inline-block;background:#fff;color:var(--lav-deep);font-weight:700;font-size:.82rem;padding:8px 16px;border-radius:999px;box-shadow:0 6px 18px rgba(106,86,153,.12)}
+  h1{font-size:3.3rem;line-height:1.08;margin:20px 0 14px;letter-spacing:-.02em}
+  h1 span{color:var(--lav-deep)}
+  .lead{color:var(--muted);font-size:1.16rem;max-width:44ch}
+  .cta{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{border:none;cursor:pointer;text-decoration:none;font-weight:700;font-size:1rem;padding:15px 28px;border-radius:999px}
+  .btn-main{background:var(--lav-deep);color:#fff;box-shadow:0 10px 26px rgba(106,86,153,.28)}
+  .btn-ghost{background:#fff;color:var(--lav-deep)}
+  .blob{aspect-ratio:1/1.05;border-radius:52% 48% 45% 55%/55% 50% 50% 45%;overflow:hidden;
+    background-image:url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80'),url('https://picsum.photos/seed/pm05p/800/1000'),linear-gradient(160deg,var(--lav),var(--peach));background-size:cover;background-position:center top;
+    box-shadow:0 24px 60px rgba(106,86,153,.22)}
+  section{padding:56px 0}
+  .sec-h{text-align:center;margin-bottom:30px}
+  .sec-h h2{font-size:2.1rem}
+  .sec-h p{color:var(--muted)}
+  .svcs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .card{background:#fff;border-radius:28px;padding:30px;box-shadow:0 14px 36px rgba(106,86,153,.1);text-align:center}
+  .ic{width:60px;height:60px;margin:0 auto 14px;border-radius:50% 50% 48% 52%/52% 48% 50% 50%;display:grid;place-items:center;font-size:1.5rem;background:var(--cream)}
+  .card:nth-child(2) .ic{background:var(--peach)}.card:nth-child(3) .ic{background:#e6ddf3}
+  .card h3{margin-bottom:6px}.card p{color:var(--muted)}
+  .price{margin-top:14px;font-weight:800;color:var(--lav-deep);font-size:1.3rem}
+  .band{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center;background:#fff;border-radius:40px;padding:34px;box-shadow:0 16px 44px rgba(106,86,153,.1)}
+  .amb{min-height:320px;border-radius:30px;background-image:url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80'),url('https://picsum.photos/seed/pm05s/1000/700'),linear-gradient(160deg,var(--peach),var(--lav));background-size:cover;background-position:center}
+  footer{text-align:center;color:var(--muted);padding:40px;font-weight:600}
+  html,body{overflow-x:hidden}
+  @media(max-width:820px){.hero,.band{grid-template-columns:1fr}.svcs{grid-template-columns:1fr}h1{font-size:2.2rem}}
+  @media(max-width:560px){.wrap{padding:0 18px}nav{flex-direction:column;gap:10px;align-items:flex-start}nav>div{display:flex;flex-wrap:wrap;gap:6px}nav a{margin-left:0}h1{font-size:1.95rem}.blob{max-width:320px;margin:0 auto}.band{padding:22px}.amb{min-height:230px}.style-tag{font-size:10px;padding:5px 11px}}
+</style>
+</head>
+<body>
+  <div class="style-tag">Estilo 05 · Orgánico boho cálido</div>
+  <div class="wrap">
+    <nav><div class="brand"><span class="leaf"></span>Presente Mental</div><div><a href="#">Sobre mí</a><a href="#">Servicios</a><a href="#">Agendar</a></div></nav>
+
+    <div class="hero">
+      <div>
+        <span class="pill">🌸 Psicología · Diana Islas</span>
+        <h1>Un espacio para <span>reencontrarte</span> contigo.</h1>
+        <p class="lead">Acompañamiento cálido y humano. Agenda tu sesión, presencial o en línea, a tu ritmo.</p>
+        <div class="cta"><a class="btn btn-main" href="#">Agendar una cita</a><a class="btn btn-ghost" href="#">Ver servicios</a></div>
+      </div>
+      <div class="blob"></div>
+    </div>
+
+    <section>
+      <div class="sec-h"><h2>Servicios</h2><p>Un proceso cuidado, paso a paso.</p></div>
+      <div class="svcs">
+        <div class="card"><div class="ic">🌿</div><h3>Terapia individual</h3><p>Sesión de 50 minutos.</p><div class="price">$600</div></div>
+        <div class="card"><div class="ic">💻</div><h3>Terapia en línea</h3><p>Desde donde estés.</p><div class="price">$600</div></div>
+        <div class="card"><div class="ic">🤝</div><h3>Primera consulta</h3><p>Conocernos sin compromiso.</p><div class="price">$600</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="band">
+        <div class="amb"></div>
+        <div>
+          <span class="pill">Sobre mí</span>
+          <h2 style="margin:16px 0 10px">Diana R. Islas Lozada</h2>
+          <p class="lead">Psicóloga clínica. Creo en un acompañamiento respetuoso donde cada persona avanza a su propio ritmo.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>Presente Mental · Diana Islas © 2026 💜</footer>
+</body>
+</html>

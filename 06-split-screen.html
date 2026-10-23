@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Estilo: Split-screen asimétrico — Presente Mental</title>
+<style>
+  :root{--lav:#9a86c4;--lav-deep:#5f4a92;--cream:#f4ecdd;--ink:#2f2838;--muted:#7a7085}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',system-ui,sans-serif;color:var(--ink);line-height:1.6}
+  .style-tag{position:fixed;bottom:14px;right:14px;z-index:99;background:var(--ink);color:#fff;font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
+  .split{display:grid;grid-template-columns:1fr 1fr;min-height:100vh}
+  .left{background:var(--cream);padding:70px 8%;display:flex;flex-direction:column;justify-content:center}
+  .right{background-image:url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80'),url('https://picsum.photos/seed/pmport/900/1200'),linear-gradient(160deg,var(--lav),var(--cream));background-size:cover;background-position:center top}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;margin-bottom:40px}
+  .dot{width:13px;height:13px;border-radius:50%;background:var(--lav-deep)}
+  .pill{display:inline-block;background:#fff;color:var(--lav-deep);font-weight:700;font-size:.8rem;padding:7px 14px;border-radius:999px;width:max-content}
+  h1{font-size:3.2rem;line-height:1.08;margin:22px 0 14px;letter-spacing:-.02em}
+  h1 span{color:var(--lav-deep)}
+  .lead{color:var(--muted);font-size:1.15rem;max-width:40ch}
+  .btn{margin-top:30px;background:var(--lav-deep);color:#fff;text-decoration:none;font-weight:700;padding:15px 30px;border-radius:12px;width:max-content}
+  .mini{display:flex;gap:28px;margin-top:40px}
+  .mini b{display:block;font-size:1.5rem;color:var(--lav-deep)}
+  .mini span{color:var(--muted);font-size:.9rem}
+  .svcs{padding:70px 8%;background:#fff;display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .svc h3{margin-bottom:6px}.svc p{color:var(--muted)}.price{margin-top:12px;font-weight:800;color:var(--lav-deep);font-size:1.3rem}
+  .svc{border-left:3px solid var(--lav);padding-left:18px}
+  html,body{overflow-x:hidden}
+  @media(max-width:860px){.split{grid-template-columns:1fr}.right{min-height:360px;order:-1}.svcs{grid-template-columns:1fr}h1{font-size:2.1rem}.left{padding:48px 6%}}
+  @media(max-width:560px){.left{padding:40px 24px}h1{font-size:1.95rem}.right{min-height:300px}.mini{gap:18px}.svcs{padding:48px 24px}.style-tag{font-size:10px;padding:5px 10px}}
+</style>
+</head>
+<body>
+  <div class="style-tag">Estilo 06 · Split-screen asimétrico</div>
+  <div class="split">
+    <div class="left">
+      <div class="brand"><span class="dot"></span>Presente Mental</div>
+      <span class="pill">Psicología · Diana Islas</span>
+      <h1>Date el <span>permiso</span> de sentirte mejor.</h1>
+      <p class="lead">Acompañamiento profesional, presencial o en línea. Agenda cuando tú quieras.</p>
+      <a class="btn" href="#">Agendar una cita →</a>
+      <div class="mini">
+        <div><b>+500</b><span>sesiones</span></div>
+        <div><b>50 min</b><span>por sesión</span></div>
+        <div><b>100%</b><span>confidencial</span></div>
+      </div>
+    </div>
+    <div class="right"></div>
+  </div>
+  <div class="svcs">
+    <div class="svc"><h3>Terapia individual</h3><p>Sesión de 50 minutos.</p><div class="price">$600</div></div>
+    <div class="svc"><h3>Terapia en línea</h3><p>Desde donde estés.</p><div class="price">$600</div></div>
+    <div class="svc"><h3>Primera consulta</h3><p>Conocernos sin compromiso.</p><div class="price">$600</div></div>
+  </div>
+</body>
+</html>
